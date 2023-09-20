@@ -1,0 +1,94 @@
+@media screen and (max-width:1024px){
+    #titulo{
+        font-size: 3rem;
+        letter-spacing: 0.5rem;
+    }
+    #presentacion{
+        font-size: 1.1rem;
+    }
+    #nav ul li p{
+        font-size: 2.5rem;
+    }
+
+    /* contenedor de experiencia*/
+
+    #titulo-exp{
+        font-size: 4rem;
+    }
+    .subtitulo-exp{
+        font-size: 1.5rem;
+    }
+    .parrafos{
+        font-size: 1.2rem;
+    }
+    #contenedor-lenguaje-programacion{
+        width: 80%;
+        height: max-content;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .caja-lenguaje-programacion{
+        width: 100px;
+        height: var(--height-exp-lenguaje);
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    /* contenido de proyectos*/
+
+    #titulo-proyectos{
+        font-size: 4rem;
+    }
+    #contenedor-proyectos-lista{
+        width: 95%;
+        padding: 1rem;
+        gap: 2rem;
+    }
+
+    /*contenido de contactos*/
+    #celular-contenedor{
+        padding-bottom: 1rem;
+    }
+    #contenedor-links{
+        height: 510px;
+        padding: 2rem;
+        padding-left: 2rem;
+        gap: 0.5rem;
+        
+    }
+    #boton-celular{
+        font-size: 30px;
+    }
+    #titulo-contactos{
+        font-size: 2rem;
+    }
+    #parrafo-contactos{
+        font-size: 1rem;
+    }
+    #div-links{
+        width: 100%;
+        height: max-content;
+        min-height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    /*contenido sobre mi*/
+
+    #titulo-sobremi{
+        font-size: 3rem;
+        letter-spacing: 0.5rem;
+    }
+    #parrafo-sobremi{
+        font-size: 1.1rem;
+    }
+    footer{
+        font-size: 1rem;
+        text-align: center;
+    }
+}

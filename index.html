@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subnormalynx</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Quicksand:wght@300&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="estilos.css"/>
+    <link rel="stylesheet" href="mediaQuery.css"/>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="todo">
+      <i
+        class="bi bi-arrow-return-left"
+        id="icon-volver"
+        data-target="#contenedor-principal"
+      ></i>
+
+      <!--=========CONTENEDOR PRINCIPAL=============-->
+      <div id="contenedor-principal" data-content class="active">
+        <aside id="aside-presentacion-nav">
+          <h1 id="titulo">Subnormalynx</h1>
+          <p id="presentacion">
+            Haz entrado a la pagina de un buen desarrollador <br> Front-End, te
+            invito explora sobre mi 😼.
+          </p>
+          <nav id="nav">
+            <ul>
+              <li>
+                <p class="tab" data-target="#contenedor-experiencia">
+                  Experiencia
+                </p>
+              </li>
+              <li>
+                <p class="tab" data-target="#contenedor-proyectos">Proyectos</p>
+              </li>
+              <li>
+                <p class="tab" data-target="#contenedor-contactos">Contactos</p>
+              </li>
+              <li>
+                <p class="tab" data-target="#contenedor-sobremi">Sobre mi</p>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+        <div id="contenedor-imagen">
+          <img src="img/lince.png" alt="" id="imagen-principal" />
+        </div>
+      </div>
+
+      <!--=========CONTENEDOR EXPERIENCIA=============-->
+
+      <div id="contenedor-experiencia" data-content>
+        <h2 id="titulo-exp">Sigo creando mi futuro</h2>
+        <h4 class="subtitulo-exp" id="subtitulo-exp-01">
+          Tengo conocimientos en:
+        </h4>
+        <div id="contenedor-lenguaje-programacion">
+          <!-- ESTO SE RELLENA CON JS -->
+        </div>
+        <div id="contenedor-exp-extra">
+          <h4 class="subtitulo-exp">Conocimientos extras:</h4>
+          <p class="parrafos">
+            - Produccion musical con 7 años de experiencia. <br /><br />
+            - Diseño grafico/Artista digital
+          </p>
+        </div>
+        <div id="contenedor-info-exp">
+            <h4 id="titulo-info-exp">Conocimiento basico, deseo de aprender alto...</h4>
+            <p id="parrafo-info-exp">
+                Por entrada tengo conocimiento en HTML5, CSS3 y JavaScript, controlo muy bien el dom y tengo simentadas algunas bases del desarrolo web.<br><br>
+                Decidi irme por lo mas demandado y seguro aprendiendo TypeScript y React(con complementos R-router, R-Redux, etc...)
+                y es donde destino mi tiempo por ahora.
+
+                Estoy dispuesto a aprender de cualquier fuente de conocimiento, empresa o persona con gran experiencia, puedo trabajar en equipo y liderar facilmente cualquier sector porque cuando aprendo algo nuevo lo lidero rapidamente. <br><br>
+                Mis conocimientos por ahora son de Desarrollador web Junior, pero pronto sere un gran Senior...eso espero -_-.
+            </p>
+        </div>
+      </div>
+
+      <!--=========CONTENEDOR PROYECTOS=============-->
+
+      <div id="contenedor-proyectos" data-content>
+        <h2 id="titulo-proyectos">
+          Poca experiencia, pero cada dia sumando mas -w-
+        </h2>
+        <p id="parrafo-proyectos">Pasa el cursor sobre los recuadros para mas informacion <b class="bi bi-hand-index-thumb" id="icon-parrafo-proyectos"></b></p>
+        <div id="contenedor-proyectos-lista">
+          <!-- ESTO SE RELLENA CON JS -->
+        </div>
+      </div>
+
+      <!--=========CONTENEDOR CONTACTOS=============-->
+
+      <div id="contenedor-contactos" data-content>
+        <aside id="aside-contactos">
+          <div id="celular-contenedor">
+            <div id="contenedor-links">
+              <h2 id="titulo-contactos">Contactame</h2>
+              <p class="parrafos" id="parrafo-contactos">
+                Puedo crear paginas simple o complejas siempre escuchando su
+                opinion, si desea puedo ayudarlo a crear su sitio web, ya sea
+                Ecommerce, Blog y/o Presentacion.
+              </p>
+              <div id="div-links">
+                <!-- ESTO SE RELLENA CON JS -->
+              </div>
+            </div>
+            <i class="bi-circle" id="boton-celular"></i>
+          </div>
+        </aside>
+        <div id="contenedor-imagen-contactos">
+          <img src="img/lince.png" alt="" id="imagen-contactos" />
+        </div>
+      </div>
+
+      <!--=========CONTENEDOR SOBRE MI=============-->
+
+      <div id="contenedor-sobremi" data-content>
+        <aside id="aside-sobremi">
+          <h2 id="titulo-sobremi">Hola! Me presento...</h2>
+          <p id="parrafo-sobremi">
+            Soy Edwin Chavez pero puedes llamarme SubnormaLynx, un joven de 17
+            años con 4 meses de aprendizaje en el sector web.<br/><br/>
+            naci en Sacramento, California en EEUU, pero actualmente vivo en el
+            estado de Chihuahua, Mexico.<br/><br/>
+            Me encanta el mundo de la programacion y todo lo que tenga que ver
+            con maquinas y computadoras, tengo otros pasatiempos mas como la
+            produccion musical que llevo haciendolo desde los 11 años y me gusta
+            realizar mi propio arte digital cuando lo nesesito en alguna pagina
+            o proyecto personal.<br/><br/>
+            Puedo seguir hablando de mi, pero puedes ir a conocerme mejor en mis
+            redes sociales.
+          </p>
+        </aside>
+        <div id="contenedor-imagen-sobremi">
+          <div id="contenedor-imagen-personal">
+            <img src="img/lince.png" alt="" id="imagen-personal" />
+          </div>
+        </div>
+      </div>
+      <footer>Copyright © Subnormalynx</footer>
+    </div>
+  </body>
+</html>
