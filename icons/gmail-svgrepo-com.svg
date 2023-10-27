@@ -4,4 +4,4 @@ aria-label="Gmail" role="img"
 viewBox="0 0 512 512"><rect
 width="512" height="512"
 rx="15%"
-fill="#ffffff"/><path d="M158 391v-142l-82-63V361q0 30 30 30" fill="#08101d"/><path d="M 154 248l102 77l102-77v-98l-102 77l-102-77" fill="#1c0806"/><path d="M354 391v-142l82-63V361q0 30-30 30" fill="#07160b"/><path d="M76 188l82 63v-98l-30-23c-27-21-52 0-52 26" fill="#0f0202"/><path d="M436 188l-82 63v-98l30-23c27-21 52 0 52 26" fill="#161000"/></svg>
+fill="#00000000"/><path d="M158 391v-142l-82-63V361q0 30 30 30" fill="#00ffff60"/><path d="M 154 248l102 77l102-77v-98l-102 77l-102-77" fill="#00ffff"/><path d="M354 391v-142l82-63V361q0 30-30 30" fill="#00ffff60"/><path d="M76 188l82 63v-98l-30-23c-27-21-52 0-52 26" fill="#00ffff90"/><path d="M436 188l-82 63v-98l30-23c27-21 52 0 52 26" fill="#00ffff90"/></svg>

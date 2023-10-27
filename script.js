@@ -5,60 +5,73 @@ const contenedorLenguajesProgramacion = document.getElementById('contenedor-leng
 const target = document.querySelectorAll('[data-target]');
 const content = document.querySelectorAll('[data-content]');
 const iconVolver = document.getElementById('icon-volver');
+const divTodo = document.getElementById('todo');
 target.forEach(target => {
     target.addEventListener('click', () => {
+        navPaginas();
         content.forEach(c => {
             setTimeout(() => {
                 c.classList.remove('active');
-            }, 1000);
+            }, 390);
         });
         
         const t = document.querySelector(target.dataset.target);
         setTimeout(() => {
             t.classList.add('active');
             iconVolver.style.display = 'block';
-        }, 1002);
+        }, 402);
+        
     })
 });
 //=========== A R R A Y     D E     P R O Y E C T O S =============
 const lenguajesDeProgramacion = [
     {
         img: 'lenguajes/html-5-svgrepo-com.svg',
+        color: '#ff4500',
+        nombre: 'html',
     },
     {
         img: 'lenguajes/css-3-svgrepo-com.svg',
+        color: '#0000cd',
+        nombre: 'css',
     },
     {
         img: 'lenguajes/javascript-svgrepo-com.svg',
+        color: '#ffe344',
+        nombre: 'js',
     },
     {
         img: 'lenguajes/typescript-icon-svgrepo-com.svg',
+        color: '#19a1ce',
+        nombre: 'ts',
     },
     {
         img: 'lenguajes/react.svg',
+        color: '#83ffff',
+        nombre: 'react',
     },
 ]
 const proyectos = [
     {
         nombre: "Tegnomobile",
-        img: 'img/lince.png',
+        img: 'img/imgPaginas/imagenSubnormaShop.jpeg',
         descripcion: 'practica de una tienda online de tegnologia mobile.',
         lenguajeUsado: [lenguajesDeProgramacion[0],lenguajesDeProgramacion[1], lenguajesDeProgramacion[2]],
-        link:'#',
+        link:'https://subnormalynx.github.io/SubnormaShop.github.io/',
     },
     {
         nombre: 'Palabreando',
-        img: 'img/lince.png',
+        img: 'img/imgPaginas/imagenPalabreando.jpeg',
         descripcion: 'Minijuego web que te reta a ser rapido escribiendo.',
         lenguajeUsado: [lenguajesDeProgramacion[0],lenguajesDeProgramacion[1], lenguajesDeProgramacion[2]],
-        link:'#',
+        link:'https://subnormalynx.github.io/Palabreando.github.io/',
     },
     {
         nombre: 'Chacobi',
-        img: 'img/lince.png',
+        img: 'img/imgPaginas/imagenChacobi.jpeg',
         descripcion: 'Pagina para una empresa de construccíones en Mexico.',
         lenguajeUsado: [lenguajesDeProgramacion[0],lenguajesDeProgramacion[1], lenguajesDeProgramacion[2]],
-        link:'#',
+        link:'https://chacobi.000webhostapp.com/',
     },
     {
         nombre: 'Practica TypeScript',
@@ -77,30 +90,45 @@ const proyectos = [
 ];
 const contactos = [
     {
+        app: 'Whatsapp',
         img: 'icons/whatsapp-svgrepo-com.svg',
         link:"#"
     },
     {
+        app: 'Instagram',
         img: 'icons/instagram-svgrepo-com.svg',
         link:"#"
     },
     {
+        app: 'Tiktok',
         img: 'icons/tiktok-svgrepo-com.svg',
         link:"#"
     },
     {
+        app: 'Facebook',
         img: 'icons/facebook-svgrepo-com.svg',
         link:"#"
     },
     {
+        app: 'Gmail',
         img: 'icons/gmail-svgrepo-com.svg',
         link:"#"
     },
     {
+        app: 'Youtube',
         img: 'icons/youtube-168-svgrepo-com.svg',
         link:"#"
     }
 ]
+
+//=========== F U N C I O N E S =============
+
+function navPaginas() {
+    divTodo.style.filter = 'blur(30px)';
+    setTimeout(() => {
+        divTodo.style.filter = 'blur(0px)';
+    }, 400);
+}
 
 const fragmentProyectos = document.createDocumentFragment();
 function aparicionProyectos() {
@@ -126,7 +154,7 @@ function aparicionProyectos() {
         div.querySelector('.div-leng-proyecto').appendChild(divLeng);
         fragmentProyectos.appendChild(div);
         div.addEventListener('click', () => {
-            alert(`redirijiendo a ${proyecto.link} ...`);
+            window.location.href = proyecto.link;
         })
     })
     contenedorProyectos.appendChild(fragmentProyectos);
@@ -136,10 +164,11 @@ let fragmentContactos = document.createDocumentFragment();
 function aparicionContactos() {
     contactos.forEach(contacto => {
         const div = document.createElement('DIV');
+        div.setAttribute('title', contacto.app)
         div.classList.add('caja-contacto');
         div.innerHTML = `
         <a href="${contacto.link}" class="caja-link-contacto">
-            <img src="${contacto.img}" alt="#" class="icon-contacto"></img>
+            <img src="${contacto.img}" alt=${contacto.app}-imagen class="icon-contacto"></img>
         </a>
         `;
         fragmentContactos.appendChild(div);
@@ -151,10 +180,17 @@ function aparicionLenguajeProgramacion() {
     lenguajesDeProgramacion.forEach(lenguaje => {
         const div = document.createElement('DIV');
         div.classList.add('caja-lenguaje-programacion');
-        div.innerHTML = `
-            <img src="${lenguaje.img}" alt="#" class="img-lenguaje-programacion"></img>
+        let idImg = `img-len-${lenguaje.nombre}`;
+        div.innerHTML =` 
+            <img src="${lenguaje.img}" alt="#" class="img-lenguaje-programacion" id="${idImg}" ></img>
         `;
         fragmentLenguajes.appendChild(div);
+        div.addEventListener('mouseenter',() => {
+            document.getElementById(idImg).style.filter = `drop-shadow(0px 0px 20px ${lenguaje.color})`;
+        })
+        div.addEventListener('mouseout',() => {
+            document.getElementById(idImg).style.filter = `drop-shadow(0px 0px 0px ${lenguaje.color})`;
+        })
     })
     contenedorLenguajesProgramacion.appendChild(fragmentLenguajes);
 }
