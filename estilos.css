@@ -31,9 +31,9 @@
     filter: blur(0px);
     position: relative;
 }
-.noise {
+.noise-1 {
     position: fixed;
-    z-index: 9999;
+    z-index: 9998;
     top: -300%;
     left: -150%;
     height: 600%;
@@ -43,9 +43,11 @@
     background-image: url(/noise.png);
     background-size: 200px;
     background-repeat: repeat;
-    opacity: .55;
+    opacity: .50;
+    filter: brightness(.6);
     pointer-events: none;
 }
+
 [data-content]{
     display: none;
 }
@@ -66,7 +68,7 @@
     z-index: 9999;
 }
 #icon-volver:hover{
-    background: linear-gradient(#ff5e9e,#bfbfbf8f,#5eecff);
+    background: linear-gradient(#ff5e9e,#5eecff);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
@@ -80,7 +82,7 @@
 #img-ux-home-1{
     width: 102%;
     height: 102vh;
-    background: url("AssetsPortafolio/UX Home 1.png");
+    background: url("AssetsPortafolio/UX Home 1.webp");
     background-repeat: no-repeat;
     background-size: 102% 102vh;
     position: absolute;
@@ -92,7 +94,7 @@
 #img-ux-home-2{
     width: 102%;
     height: 102vh;
-    background: url("AssetsPortafolio/UX Home 2.png");
+    background: url("AssetsPortafolio/UX Home 2.webp");
     background-repeat: no-repeat;
     background-size: 102% 102vh;
     position: absolute;
@@ -211,7 +213,7 @@
 #img-ux-exp-1{
     width: 101%;
     height: 102vh;
-    background: url("AssetsPortafolio/UX Exp 1.png");
+    background: url("AssetsPortafolio/UX Exp 1.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 101% 102vh;
@@ -223,7 +225,7 @@
 #img-ux-exp-2{
     width: 100%;
     height: 100vh;
-    background: url("AssetsPortafolio/UX Exp 2.png");
+    background: url("AssetsPortafolio/UX Exp 2.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100vh;
@@ -358,7 +360,7 @@
 #img-ux-proyectos-1{
     width: 120%;
     height: 150vh;
-    background: url("AssetsPortafolio/UX Proyectos 1.png");
+    background: url("AssetsPortafolio/UX Proyectos 1.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 120% 150vh;
@@ -370,7 +372,7 @@
 #img-ux-proyectos-2{
     width: 100%;
     height: 100vh;
-    background: url("AssetsPortafolio/UX Proyectos 2.png");
+    background: url("AssetsPortafolio/UX Proyectos 2.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100vh;
@@ -378,6 +380,7 @@
     top: 0;
     z-index: -2;
     animation: moveCam 20s infinite ease-in-out 0.3s;
+    filter: blur(4px);
 }
 
 #titulo-proyectos{
@@ -436,6 +439,7 @@
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    animation: moveCam 20s infinite ease-in-out;
 }
 .caja-proyecto{
     width: 25%;
@@ -505,23 +509,55 @@
     height: 100vh;
     position: relative;
     overflow: hidden;
+    align-items: center;
+    flex-direction: column;
+}
+#titulo-contactos{
+    width: max-content;
+    height: max-content;
+    font-size: 3rem;
+    font-family: var(--fuente-titulo);
+    font-weight: 600;
+    background: linear-gradient(#ff5e9e ,#5eecff);
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 1.6px #000000;
+    filter: drop-shadow(0px 0px 2px #303030);
+    text-wrap: balance;
 }
 #img-ux-contactos-1{
     width: 102%;
     height: 102vh;
-    background: url("AssetsPortafolio/UX\ Contactos.png");
+    background: url("AssetsPortafolio/UX Contactos 1.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 102% 102vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: moveCam 20s infinite ease-in-out both;
+}
+#img-ux-contactos-2{
+    width: 102%;
+    height: 102vh;
+    background: url("AssetsPortafolio/UX Contactos 2.webp");
     background-repeat: no-repeat;
     background-size: 102% 102vh;
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
+    pointer-events: none;
+    animation: moveCam 20s infinite ease-in-out  0.3s both;
+
 }
 #celular-contenedor{
     width: 20%;
     height: 90%;
-    padding: 2.5rem 0.2rem;
-    padding-bottom: 0.2rem;
     background-color: #202020;
     border-radius: 30px;
     box-shadow:
@@ -538,27 +574,17 @@
     gap: 0.5rem;
 }
 #contenedor-links{
-    width: 25%;
-    height: 70%;
-    padding: 2rem;
-    background: linear-gradient(#08272b);
-    /* background-color: #ebebeb; */
+    width: 300px;
+    height:600px;
     border-radius: 5px;
-    box-shadow:
-    inset -2px -2px 1px #1d1d1d,
-    inset -5px -5px 1px #0f0f0f,
-    inset -10px -10px 1px #0e0e0e,
-    inset -15px -15px 30px #85fbff,
-    inset -20px -20px 1px #030303,
-    inset -20px -20px 20px #000000
-    ;
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 2rem;
-    position: absolute;
-    top: 10%;
-    left: 20%;
+    position: relative;
+    transform: rotate(-18deg) translateY(-50%) translateX(-13%);
+    top: 50%;
+    left: 13%;
 }
 #boton-celular{
     font-size: 50px;
@@ -566,7 +592,7 @@
     color: #d2d2d2;
     text-shadow: 1px 1px 3px #f1f1f1;
 }
-#titulo-contactos{
+#titulo-links-contactos{
     color: #cdfff8;
     font-size: 2.3rem;
     font-weight: 700;
@@ -579,6 +605,8 @@
     -5px 5px 1px #030303,
     -6px 6px 20px #000000
     ;
+    position: relative;
+    transform: rotate(3deg);
 }
 #parrafo-contactos{
     color: #151515;
@@ -618,6 +646,7 @@
     position: relative;
     transform: translateY(0) translateX(0);
     transition: 0.2s ease-in-out;
+    cursor: pointer;
     
 }
 .caja-contacto:hover{
@@ -655,7 +684,7 @@
 #img-ux-sobremi-1{
     width: 102%;
     height: 102vh;
-    background: url("AssetsPortafolio/UX Home 1.png");
+    background: url("AssetsPortafolio/UX Home 1.webp");
     background-repeat: no-repeat;
     background-size: 102% 102vh;
     position: absolute;
@@ -667,7 +696,7 @@
 #img-ux-sobremi-2{
     width: 102%;
     height: 102vh;
-    background: url("AssetsPortafolio/UX Home 2.png");
+    background: url("AssetsPortafolio/UX Home 2.webp");
     background-repeat: no-repeat;
     background-size: 102% 102vh;
     position: absolute;
@@ -690,18 +719,22 @@
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1rem;
-    background: linear-gradient(#ff5e9e,#bfbfbf8f,#5eecff);
+    background: linear-gradient(#ff5e9e,#5eecff);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    -webkit-text-stroke: 2px #00000025;
+    -webkit-text-stroke: 1.4px #000000;
+    filter: drop-shadow(0px 0px 3px black);
 }
 #parrafo-sobremi{
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: 600;
     font-family: var(--fuente-descripcion);
-    text-shadow:
-    2px 2px 2px #6f6f6f
-    ;
+    color: white;
+    text-shadow: 1px 1px 4px #505050, 0px 0px 5px #00ffff;
+    backdrop-filter: blur(2px);
+    background: #10101050;
+    border-radius: 1rem;
+    padding: 0.2rem 0.5rem;
 
 }
 #contenedor-imagen-sobremi{
@@ -713,9 +746,9 @@
 }
 #contenedor-imagen-personal{
     width: 70%;
-    height: 400px;
+    height: 40%;
     border-radius: 100%;
-    background: radial-gradient(white,#0000002d);
+    background: radial-gradient(white 80%,#000000);
     box-shadow:
     2px 2px 2px #1d1d1d,
     5px 5px 5px #0f0f0f,

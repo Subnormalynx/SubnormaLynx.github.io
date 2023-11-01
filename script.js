@@ -53,40 +53,41 @@ const lenguajesDeProgramacion = [
 ]
 const proyectos = [
     {
-        nombre: "Tegnomobile",
-        img: 'img/imgPaginas/imagenSubnormaShop.jpeg',
+        nombre: "SubnormaShop",
+        img: 'img/imgPaginas/SSimg.webp',
         descripcion: 'practica de una tienda online de tegnologia mobile.',
         lenguajeUsado: [lenguajesDeProgramacion[0],lenguajesDeProgramacion[1], lenguajesDeProgramacion[2]],
         link:'https://subnormalynx.github.io/SubnormaShop.github.io/',
     },
     {
         nombre: 'Palabreando',
-        img: 'img/imgPaginas/imagenPalabreando.jpeg',
+        img: 'img/imgPaginas/PBimg.webp',
         descripcion: 'Minijuego web que te reta a ser rapido escribiendo.',
         lenguajeUsado: [lenguajesDeProgramacion[0],lenguajesDeProgramacion[1], lenguajesDeProgramacion[2]],
         link:'https://subnormalynx.github.io/Palabreando.github.io/',
     },
     {
         nombre: 'Chacobi',
-        img: 'img/imgPaginas/imagenChacobi.jpeg',
+        img: 'img/imgPaginas/CCimg.webp',
         descripcion: 'Pagina para una empresa de construccíones en Mexico.',
         lenguajeUsado: [lenguajesDeProgramacion[0],lenguajesDeProgramacion[1], lenguajesDeProgramacion[2]],
         link:'https://chacobi.000webhostapp.com/',
     },
     {
+        nombre: 'SubnormaArt',
+        img: 'img/imgPaginas/SSimg.webp',
+        descripcion: 'Practica de creacion de red social para creacion de componentes en react (convinando React-Router y Redux).',
+        lenguajeUsado: [lenguajesDeProgramacion[0], lenguajesDeProgramacion[1], lenguajesDeProgramacion[2], lenguajesDeProgramacion[4]],
+        link:'#',
+    },
+    {
         nombre: 'Practica TypeScript',
-        img: 'img/lince.png',
+        img: 'img/imgPaginas/CCimg.webp',
         descripcion: 'Un sitio de publicaciones con localStorage, creada para la practica con TypeScript.',
         lenguajeUsado: [lenguajesDeProgramacion[0],lenguajesDeProgramacion[1], lenguajesDeProgramacion[3]],
         link:'#',
     },
-    {
-        nombre: 'Practica React',
-        img: 'img/lince.png',
-        descripcion: 'Practicas para las creacion de componentes en react (convinando r-router).',
-        lenguajeUsado: [lenguajesDeProgramacion[0], lenguajesDeProgramacion[1], lenguajesDeProgramacion[2], lenguajesDeProgramacion[4]],
-        link:'#',
-    },
+    
 ];
 const contactos = [
     {
