@@ -31,27 +31,27 @@ target.forEach((target) => {
 //=========== A R R A Y     D E     P R O Y E C T O S =============
 const lenguajesDeProgramacion = [
   {
-    img: "img/lenguajes/html-5-svgrepo-com.svg",
+    img: "../img/lenguajes/html-5-svgrepo-com.svg",
     color: "#ff4500",
     nombre: "html",
   },
   {
-    img: "img/lenguajes/css-3-svgrepo-com.svg",
+    img: "../img/lenguajes/css-3-svgrepo-com.svg",
     color: "#0000cd",
     nombre: "css",
   },
   {
-    img: "img/lenguajes/javascript-svgrepo-com.svg",
+    img: "../img/lenguajes/javascript-svgrepo-com.svg",
     color: "#ffe344",
     nombre: "js",
   },
   {
-    img: "img/lenguajes/typescript-icon-svgrepo-com.svg",
+    img: "../img/lenguajes/typescript-icon-svgrepo-com.svg",
     color: "#19a1ce",
     nombre: "ts",
   },
   {
-    img: "img/lenguajes/react.svg",
+    img: "../img/lenguajes/react.svg",
     color: "#83ffff",
     nombre: "react",
   },
@@ -59,7 +59,7 @@ const lenguajesDeProgramacion = [
 const proyectos = [
   {
     nombre: "SubnormaShop",
-    img: "img/imgPaginas/SSimg.webp",
+    img: "../img/imgPaginas/SSimg.webp",
     descripcion: "practica de una tienda online de tegnologia mobile.",
     lenguajeUsado: [
       lenguajesDeProgramacion[0],
@@ -70,7 +70,7 @@ const proyectos = [
   },
   {
     nombre: "Palabreando",
-    img: "img/imgPaginas/PBimg.webp",
+    img: "../img/imgPaginas/PBimg.webp",
     descripcion: "Minijuego web que te reta a ser rapido escribiendo.",
     lenguajeUsado: [
       lenguajesDeProgramacion[0],
@@ -81,7 +81,7 @@ const proyectos = [
   },
   {
     nombre: "Chacobi",
-    img: "img/imgPaginas/CCimg.webp",
+    img: "../img/imgPaginas/CCimg.webp",
     descripcion: "Pagina para una empresa de construccíones en Mexico.",
     lenguajeUsado: [
       lenguajesDeProgramacion[0],
@@ -94,32 +94,32 @@ const proyectos = [
 const contactos = [
   {
     app: "Whatsapp",
-    img: "img/icons/whatsapp-svgrepo-com.svg",
+    img: "../img/icons/whatsapp-svgrepo-com.svg",
     link: "https://wa.me/qr/BMJVUEGGQR67M1",
   },
   {
     app: "Instagram",
-    img: "img/icons/instagram-svgrepo-com.svg",
+    img: "../img/icons/instagram-svgrepo-com.svg",
     link: "https://instagram.com/subnormalynx?igshid=OGQ5ZDc2ODk2ZA==",
   },
   {
     app: "Tiktok",
-    img: "img/icons/tiktok-svgrepo-com.svg",
+    img: "../img/icons/tiktok-svgrepo-com.svg",
     link: "https://www.tiktok.com/@subnormalynx?_t=8daWprvtkxC&_r=1",
   },
   {
     app: "LinkedIn",
-    img: "img/icons/linkedin-svgrepo-com.svg",
+    img: "../img/icons/linkedin-svgrepo-com.svg",
     link: "https://www.linkedin.com/in/edwin-ch%C3%A1vez-917189289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
   {
     app: "Gmail",
-    img: "img/icons/gmail-svgrepo-com.svg",
+    img: "../img/icons/gmail-svgrepo-com.svg",
     link: "mailto:EdwinChavezxwx@gmail.com",
   },
   {
     app: "Youtube",
-    img: "img/icons/youtube-168-svgrepo-com.svg",
+    img: "../img/icons/youtube-168-svgrepo-com.svg",
     link: "https://youtube.com/@subnormalynx9634?si=YOZQ34kJVPqgOEQW",
   },
 ];
