@@ -90,31 +90,6 @@ const proyectos = [
     ],
     link: "https://chacobi.000webhostapp.com/",
   },
-  {
-    nombre: "SubnormaArt",
-    img: "img/imgPaginas/SSimg.webp",
-    descripcion:
-      "Practica de creacion de red social para creacion de componentes en react (convinando React-Router y Redux).",
-    lenguajeUsado: [
-      lenguajesDeProgramacion[0],
-      lenguajesDeProgramacion[1],
-      lenguajesDeProgramacion[2],
-      lenguajesDeProgramacion[4],
-    ],
-    link: "#",
-  },
-  {
-    nombre: "Practica TypeScript",
-    img: "img/imgPaginas/CCimg.webp",
-    descripcion:
-      "Un sitio de publicaciones con localStorage, creada para la practica con TypeScript.",
-    lenguajeUsado: [
-      lenguajesDeProgramacion[0],
-      lenguajesDeProgramacion[1],
-      lenguajesDeProgramacion[3],
-    ],
-    link: "#",
-  },
 ];
 const contactos = [
   {
