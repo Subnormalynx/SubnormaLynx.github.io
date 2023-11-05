@@ -80,7 +80,7 @@
 #img-ux-home-1 {
   width: 102%;
   height: 102vh;
-  background: url("img/AssetsPortafolio/UX-Home-1.webp");
+  background: url("/img/AssetsPortafolio/UX-Home-1.webp");
   background-repeat: no-repeat;
   background-size: 102% 102vh;
   position: absolute;
@@ -92,7 +92,7 @@
 #img-ux-home-2 {
   width: 102%;
   height: 102vh;
-  background: url("img/AssetsPortafolio/UX-Home-2.webp");
+  background: url("/img/AssetsPortafolio/UX-Home-2.webp");
   background-repeat: no-repeat;
   background-size: 102% 102vh;
   position: absolute;
@@ -207,7 +207,7 @@
 #img-ux-exp-1 {
   width: 102%;
   height: 102vh;
-  background: url("img/AssetsPortafolio/UX-Exp-1.webp");
+  background: url("/img/AssetsPortafolio/UX-Exp-1.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 102% 102vh;
@@ -221,7 +221,7 @@
 #img-ux-exp-2 {
   width: 102%;
   height: 102vh;
-  background: url("img/AssetsPortafolio/UX-Exp-2.webp");
+  background: url("/img/AssetsPortafolio/UX-Exp-2.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 102% 102vh;
@@ -350,7 +350,7 @@
 #img-ux-proyectos-1 {
   width: 120%;
   height: 150vh;
-  background: url("img/AssetsPortafolio/UX-Proyectos-1.webp");
+  background: url("/img/AssetsPortafolio/UX-Proyectos-1.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 120% 150vh;
@@ -362,7 +362,7 @@
 #img-ux-proyectos-2 {
   width: 100%;
   height: 100vh;
-  background: url("img/AssetsPortafolio/UX-Proyectos-2.webp");
+  background: url("/img/AssetsPortafolio/UX-Proyectos-2.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100vh;
@@ -375,7 +375,7 @@
 #img-ux-proyectos-3 {
   width: 120%;
   height: 150vh;
-  background: url("img/AssetsPortafolio/UX-Proyectos-3.webp");
+  background: url("/img/AssetsPortafolio/UX-Proyectos-3.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 120% 150vh;
@@ -526,7 +526,7 @@
 #img-ux-contactos-1 {
   width: 102%;
   height: 102vh;
-  background: url("img/AssetsPortafolio/UX-Contactos-1.webp");
+  background: url("/img/AssetsPortafolio/UX-Contactos-1.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 102% 102vh;
@@ -542,7 +542,7 @@
 #img-ux-contactos-2 {
   width: 102%;
   height: 102vh;
-  background: url("img/AssetsPortafolio/UX-Contactos-2.webp");
+  background: url("/img/AssetsPortafolio/UX-Contactos-2.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 102% 102vh;
@@ -649,7 +649,7 @@
 #img-ux-sobremi-1 {
   width: 102%;
   height: 102vh;
-  background: url("img/AssetsPortafolio/UX-Home-1.webp");
+  background: url("/img/AssetsPortafolio/UX-Home-1.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 102% 102vh;
@@ -660,7 +660,7 @@
 #img-ux-sobremi-2 {
   width: 102%;
   height: 102vh;
-  background: url("img/AssetsPortafolio/UX-Home-2.webp");
+  background: url("/img/AssetsPortafolio/UX-Home-2.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 102% 102vh;
